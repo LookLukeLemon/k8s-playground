@@ -9,6 +9,9 @@ spec:
     namespace: myapp
     server: "https://kubernetes.default.svc"
   source:
+    helm:
+      valueFiles:
+        - values.yaml
     repoURL: "https://github.com/LookLukeLemon/k8s-playground"
     path: mongo-web
     targetRevision: HEAD
