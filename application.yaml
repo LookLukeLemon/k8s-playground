@@ -10,8 +10,8 @@ spec:
     server: "https://kubernetes.default.svc"
   source:
     repoURL: "https://github.com/LookLukeLemon/k8s-playground.git"
-    targetRevision: 0.1.0
-    chart: mongo-web
+    targetRevision: HEAD
+    path: mongo-web
   project: default
   syncPolicy:
     automated:
