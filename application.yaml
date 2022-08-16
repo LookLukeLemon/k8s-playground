@@ -9,7 +9,7 @@ spec:
     namespace: myapp
     server: "https://kubernetes.default.svc"
   source:
-    repoURL: "https://github.com/LookLukeLemon/k8s-playground.git"
+    repoURL: "https://github.com/LookLukeLemon/k8s-playground"
     targetRevision: 0.1.0
     chart: mongo-web
   project: default
