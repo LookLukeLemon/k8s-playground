@@ -6,4 +6,5 @@ commonAnnotations:
 bases:
   - ../../base
 patchesStrategicMerge:
-  - staging-mongodb-secret.yaml
+  - mongodb-secret.yaml
+  - web-ingress.yaml
