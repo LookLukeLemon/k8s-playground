@@ -12,6 +12,6 @@ spec:
             path: "/"
             backend:
               service:
-                name: mongo-express-service
+                name: dev-mongo-express-service
                 port:
                   number: 8081

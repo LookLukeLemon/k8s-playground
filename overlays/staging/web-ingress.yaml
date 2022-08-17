@@ -6,3 +6,12 @@ metadata:
 spec:
   rules:
     - host: lukegogogogo-staging.com
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: staging-mongo-express-service
+                port:
+                  number: 8081

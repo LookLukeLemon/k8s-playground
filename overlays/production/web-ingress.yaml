@@ -6,3 +6,12 @@ metadata:
 spec:
   rules:
     - host: lukegogogogo-prod.com
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: prod-mongo-express-service
+                port:
+                  number: 8081
