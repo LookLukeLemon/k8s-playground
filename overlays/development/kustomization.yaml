@@ -1,8 +1,8 @@
 namePrefix: dev-
 commonLabels:
-  varient: staging
+  varient: development
 commonAnnotations:
-  note: This is staging
+  note: This is development
 bases:
   - ../../base
 patchesStrategicMerge:
