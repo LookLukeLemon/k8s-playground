@@ -1,0 +1,9 @@
+namePrefix: dev-
+commonLabels:
+  varient: staging
+commonAnnotations:
+  note: This is staging
+bases:
+  - ../../base
+patchesStrategicMerge:
+  - dev-mongodb-secret.yaml
