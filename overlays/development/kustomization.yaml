@@ -7,3 +7,4 @@ bases:
   - ../../base
 patchesStrategicMerge:
   - web-ingress.yaml
+  - configmap.yaml
