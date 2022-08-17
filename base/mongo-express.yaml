@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: mongo-express
-          image: mongo-express:latest
+          image: mongo-express:0.54
           resources:
             limits:
               memory: "128Mi"
