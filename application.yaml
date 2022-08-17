@@ -13,7 +13,7 @@ spec:
       valueFiles:
         - values.yaml
     repoURL: "https://github.com/LookLukeLemon/k8s-playground"
-    path: mongo-web
+    path: charts/mongo-web
     targetRevision: HEAD
   project: default
   syncPolicy:
