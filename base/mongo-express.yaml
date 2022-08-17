@@ -17,10 +17,11 @@ spec:
       containers:
         - name: mongo-express
           image: mongo-express:0.54
+          imagePullPolicy: Always
           resources:
             limits:
               memory: "128Mi"
-              cpu: "100m"
+              cpu: "200m"
           ports:
             - containerPort: 8081
           env:
