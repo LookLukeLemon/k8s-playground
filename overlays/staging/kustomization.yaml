@@ -1,10 +1,9 @@
 namePrefix: staging-
 commonLabels:
-  varient: staging
+  variant: staging
 commonAnnotations:
   note: This is staging
 bases:
   - ../../base
 patchesStrategicMerge:
-  - mongodb-secret.yaml
   - web-ingress.yaml

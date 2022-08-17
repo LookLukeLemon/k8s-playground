@@ -1,10 +1,9 @@
 namePrefix: dev-
 commonLabels:
-  varient: development
+  variant: development
 commonAnnotations:
   note: This is development
 bases:
   - ../../base
 patchesStrategicMerge:
-  - mongodb-secret.yaml
   - web-ingress.yaml
