@@ -5,7 +5,7 @@ metadata:
   labels:
     app: mongo-express
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: mongo-express
@@ -19,9 +19,26 @@ spec:
           image: mongo-express:0.54
           imagePullPolicy: Always
           resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
             limits:
               memory: "128Mi"
-              cpu: "200m"
+              cpu: "500m"
+          readinessProbe:
+            exec:
+              command:
+                - cat
+                - /tmp/healthy
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          livenessProbe:
+            exec:
+              command:
+                - cat
+                - /tmp/healthy
+            initialDelaySeconds: 5
+            periodSeconds: 5
           ports:
             - containerPort: 8081
           env:
